@@ -1,9 +1,17 @@
 package chat.demo;
 
+import javax.swing.SwingUtilities;
+
 public class Main {
+    public static void main(String[] args) {
 
-	public static void main(String[] args) {
-		System.out.println("Hello world!");;
-	}
-
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new Client();
+                new Server();
+            }
+        });
+    }
 }
+
