@@ -1,20 +1,19 @@
 package chat.demo;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Client extends JFrame {
+public class InputPanel extends JPanel {
 
     private JTextField inputField;
+    private JButton sendButton;
 
-    protected Client() {
+    public InputPanel() {
 
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setTitle("Chat client");
-
-        inputField = new JTextField(20);
-        JButton sendButton = new JButton("Send");
+        inputField = new JTextField(25);
+        sendButton = new JButton("Send");
 
         sendButton.addActionListener(new ActionListener() {
             @Override
@@ -25,13 +24,9 @@ public class Client extends JFrame {
             }
         });
 
-        JPanel inputPanel = new JPanel();
-        inputPanel.add(inputField);
-        inputPanel.add(sendButton);
-        add(inputPanel);
-
-        pack();
-        setVisible(true);
+        setLayout(new BorderLayout());
+        add(inputField, BorderLayout.WEST);
+        add(sendButton, BorderLayout.EAST);
+    
     }
-
 }
