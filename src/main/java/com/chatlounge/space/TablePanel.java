@@ -1,4 +1,4 @@
-package com.techchat.space;
+package com.chatlounge.space;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;

@@ -1,4 +1,4 @@
-package com.techchat.log;
+package com.chatlounge.log;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

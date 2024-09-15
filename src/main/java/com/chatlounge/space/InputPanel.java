@@ -1,8 +1,8 @@
-package com.techchat.space;
+package com.chatlounge.space;
 
 import javax.swing.*;
 
-import com.techchat.integration.Server;
+import com.chatlounge.integration.Server;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;

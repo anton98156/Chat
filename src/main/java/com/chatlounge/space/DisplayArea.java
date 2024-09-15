@@ -1,4 +1,4 @@
-package com.techchat.space;
+package com.chatlounge.space;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

@@ -1,9 +1,9 @@
-package com.techchat.integration;
+package com.chatlounge.integration;
 
 import javax.swing.*;
 
-import com.techchat.space.InputPanel;
-import com.techchat.space.TablePanel;
+import com.chatlounge.space.InputPanel;
+import com.chatlounge.space.TablePanel;
 
 import java.awt.*;
 

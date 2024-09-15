@@ -1,10 +1,11 @@
-package com.techchat.integration;
+package com.chatlounge.integration;
 
 import java.awt.Dimension;
-import com.techchat.space.DisplayArea;
-import com.techchat.log.LogFileWriter;
 
 import javax.swing.*;
+
+import com.chatlounge.log.LogFileWriter;
+import com.chatlounge.space.DisplayArea;
 
 public class Server extends JFrame {
 
