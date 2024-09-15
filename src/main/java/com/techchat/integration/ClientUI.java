@@ -1,13 +1,17 @@
-package chat.demo;
+package com.techchat.integration;
 
 import javax.swing.*;
+
+import com.techchat.space.InputPanel;
+import com.techchat.space.TablePanel;
+
 import java.awt.*;
 
 public class ClientUI extends JFrame {
     private TablePanel tablePanel;
     private InputPanel inputPanel;
 
-    protected ClientUI() {
+    public ClientUI() {
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Chat client");

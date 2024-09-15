@@ -1,6 +1,9 @@
-package chat.demo;
+package com.techchat.space;
 
 import javax.swing.*;
+
+import com.techchat.integration.Server;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

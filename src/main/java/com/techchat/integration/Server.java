@@ -1,6 +1,8 @@
-package chat.demo;
+package com.techchat.integration;
 
 import java.awt.Dimension;
+import com.techchat.space.DisplayArea;
+import com.techchat.log.LogFileWriter;
 
 import javax.swing.*;
 
@@ -8,7 +10,7 @@ public class Server extends JFrame {
 
     private static DisplayArea displayArea;
 
-    protected Server() {
+    public Server() {
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Chat server");
@@ -24,7 +26,7 @@ public class Server extends JFrame {
         setVisible(true);
     }
 
-    protected static void receiveMessage(String message) {
+    public static void receiveMessage(String message) {
         displayArea.appendMessage(message);
         LogFileWriter.saveToLogFile(message, "log.txt");
     }
